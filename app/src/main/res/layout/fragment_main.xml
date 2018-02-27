@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--Toolbar-->
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarMain"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <!--Content-->
+    <LinearLayout
+        android:background="#40000000"
+        android:padding="@dimen/padding"
+        android:layout_margin="@dimen/margin"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--Icon-->
+        <ImageView
+            android:src="@drawable/icondollar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <!--ShowText-->
+        <TextView
+            android:id="@+id/txtShowName"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            android:textSize="@dimen/h1"
+            android:text="@string/full_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!--ShowText2-->
+        <TextView
+            android:id="@+id/txtShowName2"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            android:textSize="@dimen/h1"
+            android:text="@string/No_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!--Calculate Button-->
+        <Button
+            android:id="@+id/btncalculate"
+            android:text="Calculate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
